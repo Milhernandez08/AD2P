@@ -1,0 +1,19 @@
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <div class="col-md-12 text-center" id="form">
+    		<b><h2>Verificacion en Dos Pasos</h2></b>
+    </div>
+    <!-- Login Form -->
+    <form #form="ngForm" (ngSubmit) = "enterCode(form)" id="form">
+      <div class="form-group">
+          <label style="text-align: center">Ingrese el codigo enviado en su telefono</label>
+          <input type="number"  class="fadeIn second" name="phone" placeholder="Codigo" ngModel required> 
+        </div>
+      <input type="submit" class="fadeIn fourth" value="Enviar">
+      <br>
+    </form>    
+
+  </div>
+</div> 

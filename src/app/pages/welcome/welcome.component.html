@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/welcome" >Inicio</a>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="login()" > Cerrar Sesion</button>
+  </form>
+</nav>
+
+<div class="container" id="form">
+  <div class="row">
+    <div class="col-md-12" style="margin:20px auto;">
+      <div class="alert alert-info text-center"><strong>Bienvenido {{nameUser}} </strong></div>
+      <div class="card text-center " id="m">
+        <h1> {{mailUser}} </h1>        
+      </div>
+      <div class="card text-center " id="m">
+        <h2> {{phoneUser}} </h2>    
+      </div>
+      <form class="form-inline" id="ma">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="sms()" > Dos Pasos</button>
+      </form>
+    </div>
+  </div>
+</div>
